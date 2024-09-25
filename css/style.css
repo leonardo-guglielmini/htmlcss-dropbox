@@ -75,6 +75,22 @@ img{
     width: 65%;
 }
 
+.column-33{
+    width: calc(100%/3);
+    position: relative;
+}
+
+.column-66{
+    width: calc((100%/3)*2);
+}
+
+.column-30{
+    width: 30%;
+}
+
+.column-30 li{
+    display: flex;
+}
 
 .navbar{
     display: flex;
@@ -89,6 +105,11 @@ img{
 
 .navbar ul > *{
     padding: 0 10px;
+}
+
+hr{
+    width: 100%;
+    margin:10px auto;
 }
 
 /*HEADER*/
@@ -121,6 +142,95 @@ img{
 }
 
 .plans{
+    padding:50px 10px;
+}
+
+.plans h2{
+    font-size: 35px;
+}
+
+.plans label{
+    padding-left: 2px;
+    padding-right: 15px;
+}
+
+.plans .billing-period{
     padding: 30px 0;
+}
+
+.plan-list > *:not(:last-child){
+    margin:0 calc(10%/6);
+}
+
+.plan-list > *{
+    border: 1px solid grey;
+}
+
+.plan-list ul > li{
+    padding: 10px 0;
+}
+
+.plan-list ul > li{
+    padding-left: 15px;
+}
+
+.plan-list ul>li:last-child{
+    padding-bottom:50px ;
+}
+
+.plan-list h3{
+    font-size: 25px;
+}
+
+.plan-header{
+    text-align: center;
+}
+
+.plan-list .plan-monthly{
+    padding-top: 0;
+    padding-bottom: 0px;
+    font-size: 14px;
+    color: grey;
+}
+
+.plan-list ul i{
+    padding-right: 5px;
+}
+
+.try-free, .contact-us{
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+.try-free .btn, .contact-us .btn{
+    padding: 10px 25px;
+}
+
+.plan-list a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.plan-list .fa-check{
+    color: blue;
+}
+
+.hr{
+    width: 50%;
+    margin: 30px auto;
+}
+
+.plan-list .column-100{
+    margin: 50px;
+}
+
+.enterprise-price{
+    font-weight: bold;
+}
+
+.column-33 .btn{
+    position:absolute;
+    top:10px;
+    right: 10px;
 }
 
