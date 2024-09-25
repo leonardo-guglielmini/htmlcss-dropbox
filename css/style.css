@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*DEBUG*/
+
+.debug .container > *{
+    border: 1px dashed black;
+    height: 100px;
+}
+
+/*LAYOUT*/
+
+.container{
+    margin:0 auto;
+}
+
+.container-100{
+    width: 100%;
+}
+
+.container-60{
+    width: 65%;
+}
+
+.container-50{
+    width: 55%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul > *{
+    padding: 0 10px;
+}
+
+/*HEADER*/
+
+/*MAIN*/
+
+.hero{
+    background-color: #B4D0E7;
+}
+
+.plans{
+    padding: 30px 0;
+}
