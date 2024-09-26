@@ -276,8 +276,12 @@ p{
     margin-bottom: 75px;
 }
 
-.plan-custom .column-33{
-    position: relative;
+.plan-custom .row{
+    align-items: flex-start;
+} 
+
+.plan-custom{
+    padding-bottom: 50px;
 }
 
 .custom-price{
@@ -286,9 +290,9 @@ p{
 }
 
 .plan-custom .btn{
-    position:absolute;
-    top:10px;
-    right: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .partner .column-100{
@@ -425,25 +429,21 @@ p{
 
 .bg-B4D0E7{
     background-color: #B4D0E7;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 .try-business .content{
-    padding: 150px 0;
+    padding: 100px 0;
     color: #61082B;
-    position: relative;
-}
-
-.try-business .content > *{
-    position: absolute;
-    top:40%;
-    left:0%;
-    max-width: 50%;
 }
 
 .try-business .content a{
     background-color: white;
     color: black;
-    left: 70%;
+}
+
+.try-business .row .column-50:last-child{
+    text-align: right;
+    padding-top: 20px;
 }
 
 .faq{
@@ -460,19 +460,16 @@ p{
 
 .faq ul > li{
     font-weight: bold;
-    position: relative;
     margin: 0 auto;
     width: 90%;
 }
 
-.faq ul > li:nth-child(2n){
-    margin: 25px auto;
+.faq ul li > i{
+    padding-left: 200px;
 }
 
-.faq ul li > i{
-    position: absolute;
-    top:5px;
-    right: 5%;
+.faq ul > li:nth-child(2n){
+    margin: 25px auto;
 }
 
 /*FOOTBAR*/
@@ -523,15 +520,13 @@ p{
     background-color: var(--btn-bg-color);
 }
 
-/*FA ICON LEFT POS TEST*/
-.plan-info-list li p{
-    position: relative;
-    padding-left: 30px;
+
+/*TEST PREVENT ICON WRAPPING*/
+.plans ul li i{
+    float: left;
 }
 
-.plan-info-list li i{
-    position: absolute;
-    left:0;
-    top:5px;
+.plans ul li span.text-to-right{
+    display: block;
+    overflow: hidden;
 }
-
