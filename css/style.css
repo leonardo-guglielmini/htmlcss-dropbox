@@ -309,6 +309,19 @@ p{
     margin-top: 20px;
 }
 
+.dropbox-users{
+    padding: 100px 15px;
+}
+
+.dropbox-users h3{
+    margin-bottom: 30px;
+}
+
+.dropbox-users  a{
+    text-decoration: underline;
+    color: blue;
+}
+
 /*RADIO-BTN STYLING TEST*/
 /*Need to add white circle inside when button checked*/
 .btn-radio {
