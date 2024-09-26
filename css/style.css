@@ -404,6 +404,25 @@ p{
     margin: 30px 0;
 }
 
+.try-business{
+    padding: 150px 0;
+    background-color: #B4D0E7;
+    color: #61082B;
+    position: relative;
+}
+
+.try-business .content > *{
+    position: absolute;
+    top:40%;
+    left:20%;
+    max-width: 30%;
+}
+
+.try-business .content a{
+    background-color: white;
+    color: black;
+    left: 70%;
+}
 
 
 /*RADIO-BTN STYLING TEST*/
