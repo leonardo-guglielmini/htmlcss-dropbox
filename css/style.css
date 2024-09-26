@@ -4,13 +4,16 @@
     --btn-bg-color: #0061FF;
     --btn-color: white;
     --btn-padding:7px 9px;
-    --font-size: 20px;
+    --font-size: 0.9vw;
 }
 
 html{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    /*FONT-SIZE RELATIVE TEST*/
+    font-size: var(--font-size);
 }
 
 *{
@@ -63,8 +66,8 @@ img{
     flex-wrap: wrap;
 }
 
-.plan-list{
-    justify-content: space-between;
+.card > *{
+    padding: 0 15px;
 }
 
 .column-100{
@@ -73,6 +76,7 @@ img{
 
 .column-35{
     width: 35%;
+    padding-top: 35px;
 }
 
 .column-65{
@@ -82,18 +86,16 @@ img{
 
 .column-33{
     width: calc(100%/3);
+    padding: 0 15px;
+    display: flex;
 }
 
 .column-66{
     width: calc((100%/3)*2);
 }
 
-.column-30{
-    width: 30%;
-}
-
-.column-30 li{
-    display: flex;
+.card{
+    border: 1px solid grey;
 }
 
 .navbar{
@@ -111,19 +113,24 @@ img{
     padding: 0 10px;
 }
 
-hr{
-    width: 100%;
-    margin:10px auto;
+.billing{
+    padding: 0 15px;
 }
-
-/*HEADER*/
 
 .btn{
     background-color: var(--btn-bg-color);
     color: var(--btn-color);
     padding: var(--btn-padding);
-
+    padding: 15px 10px;
+    text-align: center;
 }
+
+/*HEADER*/
+
+.navbar .btn{
+    padding: 5px 10px ;
+}
+
 
 /*MAIN*/
 
@@ -136,27 +143,27 @@ hr{
     font-size: var(--font-size);
 }
 
-.hero ul > *:not(:last-child){
+.hero ul > *:not(:last-child):not(:first-child){
     padding: 25px 0;
 }
 
 .hero h1{
-    font-size: 90px;
+    font-size: 4.5vw;
     padding: 25px 0;
     line-height: 90px;
 }
 
 .dropbox-features{
     position: absolute;
-    bottom:-75px;
+    bottom:-90px;
 }
 
 .plans{
-    padding: 125px 0;
+    padding-top: 100px;
 }
 
 .plans h2{
-    font-size: 35px;
+    font-size: 2vw;
 }
 
 .plans label{
@@ -169,52 +176,53 @@ hr{
     padding-bottom: 35px;
 }
 
-.plan-list > *{
-    border: 1px solid grey;
+.plan-info > *{
+    margin-bottom:30px ;
 }
 
-.plan-list ul > li{
-    padding: 10px 0;
-    padding-left: 15px;
-}
-
-.plan-list ul>li:last-child{
-    padding-bottom:50px ;
+.plan-info-list ul > *:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .plan-list h3{
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 .plan-header{
     text-align: center;
 }
 
-.plan-list .plan-monthly{
-    padding-bottom: 25px;
-    font-size: 14px;
+.plan-info-title :last-child{
+    font-size: 0.7vw;
     color: grey;
 }
 
-.plan-list ul i{
+.plan-info i{
     padding-right: 5px;
 }
 
-.plan-list .try-free, .plan-list .contact-us{
-    padding: 50px 0;
+.plan-cta{
+    margin-top: 40px;
 }
 
-.try-free .btn, .contact-us .btn, .enterprise-plan .btn{
-    color:white;
-    text-decoration: none;
+.plan-cta > a{
+    display: block;
     width: 250px;
-    padding: 15px 10px;
-    text-align: center;
     margin: 0 auto;
-
 }
 
-.plan-list a{
+.plan-cta p{
+    padding-top:25px ;
+}
+
+.plan-cta span{
+    border: 1px solid lightgray;
+    margin-top: 30px;
+    display: block;
+    width: 30%;
+}
+
+.plan-cta p a{
     text-decoration: underline;
     color: blue;
 }
@@ -223,15 +231,10 @@ hr{
     color: blue;
 }
 
-.plan-list .hr{
-    width: 30%;
-    margin-left: 10px;
-    margin-top: 30px;
-}
-
 .plan-list .column-100
 {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
 .enterprise-plan .column-33{
@@ -243,9 +246,36 @@ hr{
     margin-bottom: 30px;
 }
 
-.column-33 .btn{
+.enterprise-plan .btn{
     position:absolute;
     top:10px;
-    right: 20px;
+    right: 10px;
 }
 
+/*RADIO-BTN STYLING TEST*/
+/*Need to add white circle inside when button checked*/
+.btn-radio {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    color: currentColor;
+    width: 1.3em;
+    height: 1.3em;
+    border: 0.1em solid grey;
+    border-radius: 50%;
+}
+
+.btn-radio:checked{
+    background-color: var(--btn-bg-color);
+}
+
+/*FA ICON LEFT POS TEST*/
+.plan-info-list li p{
+    position: relative;
+    padding-left: 20px;
+}
+
+.plan-info-list li i{
+    position: absolute;
+    left:0;
+}
