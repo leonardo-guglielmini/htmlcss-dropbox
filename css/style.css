@@ -530,3 +530,8 @@ p{
     display: block;
     overflow: hidden;
 }
+
+/*TEST PREVENT IMAGE STRETCHING*/
+.correlated .logos .no-stretch{
+    aspect-ratio: auto;
+}
