@@ -11,9 +11,6 @@ html{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-    /*FONT-SIZE RELATIVE TEST*/
-    font-size: var(--font-size);
 }
 
 *{
@@ -53,12 +50,13 @@ img{
     width: 100%;
 }
 
-.container-60{
+.container-65{
     width: 65%;
 }
 
-.container-50{
+.container-55{
     width: 55%;
+    padding: 0 15px;
 }
 
 .row{
@@ -84,8 +82,23 @@ img{
     position: relative;
 }
 
+.column-60{
+    width: 60%;
+}
+
+.column-40{
+    width: 40%;
+}
+
 .column-33{
     width: calc(100%/3);
+}
+
+.column-100{
+    padding: 0 15px;
+}
+
+.plans .column-33{
     padding: 0 15px;
     display: flex;
 }
@@ -94,7 +107,7 @@ img{
     width: calc((100%/3)*2);
 }
 
-.card{
+.plans .card{
     border: 1px solid grey;
 }
 
@@ -113,10 +126,6 @@ img{
     padding: 0 10px;
 }
 
-.billing{
-    padding: 0 15px;
-}
-
 .btn{
     background-color: var(--btn-bg-color);
     color: var(--btn-color);
@@ -125,12 +134,36 @@ img{
     text-align: center;
 }
 
+/*TEXT FORMATTING*/
+
+h1{
+    font-size: 4.5vw;
+    padding: 25px 0;
+    line-height: 90px;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+h3{
+    font-size: 1.5vw;
+}
+
+h4{
+    font-size: 1vw;
+}
+
+p{
+    /*FONT-SIZE RELATIVE TEST*/
+    font-size: var(--font-size);
+}
+
 /*HEADER*/
 
 .navbar .btn{
     padding: 5px 10px ;
 }
-
 
 /*MAIN*/
 
@@ -147,23 +180,13 @@ img{
     padding: 25px 0;
 }
 
-.hero h1{
-    font-size: 4.5vw;
-    padding: 25px 0;
-    line-height: 90px;
-}
-
-.dropbox-features{
+.dropbox-content{
     position: absolute;
     bottom:-90px;
 }
 
 .plans{
     padding-top: 100px;
-}
-
-.plans h2{
-    font-size: 2vw;
 }
 
 .plans label{
@@ -182,10 +205,6 @@ img{
 
 .plan-info-list ul > *:not(:last-child){
     margin-bottom: 10px;
-}
-
-.plan-list h3{
-    font-size: 1.5vw;
 }
 
 .plan-header{
@@ -250,6 +269,44 @@ img{
     position:absolute;
     top:10px;
     right: 10px;
+}
+
+.partner .partner-img{
+    max-width: 60%;
+    float:left
+}
+
+.partner-text > *{
+    padding: 10px 0;
+}
+
+.partner .partner-text{
+    padding-top: 70px;
+}
+
+.partner-text p{
+    margin-bottom: 30px;
+}
+
+.partner a{
+    padding: 7px 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+}
+
+.dropbox-features{
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.dropbox-features{
+    padding-top: 30px;
+}
+
+.dropbox-features p{
+    font-size: 0.8vw;
+    margin-top: 20px;
 }
 
 /*RADIO-BTN STYLING TEST*/
