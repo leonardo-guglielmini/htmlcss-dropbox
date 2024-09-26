@@ -63,6 +63,10 @@ img{
     flex-wrap: wrap;
 }
 
+.plan-list{
+    justify-content: space-between;
+}
+
 .column-100{
     width: 100%;
 }
@@ -73,11 +77,11 @@ img{
 
 .column-65{
     width: 65%;
+    position: relative;
 }
 
 .column-33{
     width: calc(100%/3);
-    position: relative;
 }
 
 .column-66{
@@ -125,6 +129,7 @@ hr{
 
 .hero{
     background-color: #B4D0E7;
+    padding: 20px 0;
 }
 
 .hero ul > *{
@@ -141,8 +146,13 @@ hr{
     line-height: 90px;
 }
 
+.dropbox-features{
+    position: absolute;
+    bottom:-75px;
+}
+
 .plans{
-    padding:50px 10px;
+    padding: 125px 0;
 }
 
 .plans h2{
@@ -155,11 +165,8 @@ hr{
 }
 
 .plans .billing-period{
-    padding: 30px 0;
-}
-
-.plan-list > *:not(:last-child){
-    margin:0 calc(10%/6);
+    padding-top:50px;
+    padding-bottom: 35px;
 }
 
 .plan-list > *{
@@ -168,9 +175,6 @@ hr{
 
 .plan-list ul > li{
     padding: 10px 0;
-}
-
-.plan-list ul > li{
     padding-left: 15px;
 }
 
@@ -187,8 +191,7 @@ hr{
 }
 
 .plan-list .plan-monthly{
-    padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     font-size: 14px;
     color: grey;
 }
@@ -197,13 +200,18 @@ hr{
     padding-right: 5px;
 }
 
-.try-free, .contact-us{
-    padding: 0 0;
-    margin: 0 auto;
+.plan-list .try-free, .plan-list .contact-us{
+    padding: 50px 0;
 }
 
-.try-free .btn, .contact-us .btn{
-    padding: 10px 25px;
+.try-free .btn, .contact-us .btn, .enterprise-plan .btn{
+    color:white;
+    text-decoration: none;
+    width: 250px;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 .plan-list a{
@@ -215,22 +223,29 @@ hr{
     color: blue;
 }
 
-.hr{
-    width: 50%;
-    margin: 30px auto;
+.plan-list .hr{
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
-.plan-list .column-100{
-    margin: 50px;
+.plan-list .column-100
+{
+    margin: 50px 0;
+}
+
+.enterprise-plan .column-33{
+    position: relative;
 }
 
 .enterprise-price{
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .column-33 .btn{
     position:absolute;
     top:10px;
-    right: 10px;
+    right: 20px;
 }
 
