@@ -82,6 +82,10 @@ img{
     position: relative;
 }
 
+.column-50{
+    width: 50%;
+}
+
 .column-60{
     width: 60%;
 }
@@ -322,6 +326,86 @@ p{
     color: blue;
 }
 
+/*ASIDE*/
+
+.correlated .column-50{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correlated .column-33:nth-child(2){
+    background-color: #F5F5F5;
+}
+
+.correlated .logos img{
+    width: 50%;
+    height: auto;
+    max-height: 400px;
+    aspect-ratio: 1/1;
+    margin:25% 0;
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
+
+.correlated .column-33{
+    background-color: rebeccapurple;
+}
+
+.designit{
+    border: 10px solid #D1E9CD;
+    background-color: #A2D3B9;
+}
+
+.asu{
+    background-color: #61082b;
+}
+
+.florida{
+    background-color: #0093CE;
+}
+
+.topps{
+    background-color: #FF1C1C;
+}
+
+.world-bicycle-relief{
+    background-color: #D5001F;
+}
+
+.hearst-corp{
+    background-color: #B4D0E7;
+}
+
+.lonely-planet{
+    background-color: #0D2481;
+}
+
+.clear-channel{
+    background-color: #FFD830;
+}
+
+.jumbo-logo{
+    padding: 30px 50px;
+}
+
+.jumbo-logo img{
+    width: 60%;
+    height: auto;
+}
+
+.jumbo-logo span{
+    border: 1px solid lightgray;
+    margin-top: 50px;
+    display: block;
+    width: 20%;
+}
+
+.jumbo-logo p{
+    margin: 30px 0;
+}
+
+
+
 /*RADIO-BTN STYLING TEST*/
 /*Need to add white circle inside when button checked*/
 .btn-radio {
@@ -349,3 +433,4 @@ p{
     position: absolute;
     left:0;
 }
+
